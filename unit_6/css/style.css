@@ -3,10 +3,6 @@
 body {background-color: #000;
 }
 
-#featured {
-
-}
-
 h1, ul, h2, h3, a{
 	color: #fff;
 	font-family: "Oswald", sans-serif;
@@ -22,15 +18,31 @@ img{
   width: 100%;
 }
 
-p{
-	font-family: "Crimson Text", serif;
-	font-size: 20px;
-	color: #fff;
+.scroll div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #000000a3;
+	padding: 1em;
+	transform: translate(-50%, -50%);
+}
+nav h2: nth-of-type(1){
+	top:50%;
+	left: 1em;
+}
+nav h2: nth-of-type(2){
+	top:25%;
+	left: 1em;
+}
+nav h2: nth-of-type(3){
+	top: 3em;
+	left: 50%;
+}
+nav h2: nth-of-type(4){
+	top: 50%;
+	right: 1em;
 }
 
-ul{ list-style-type: none;
-	font-size: 30px;
-}
 h3{
 text-align: right; 
 margin-right: 30px;
