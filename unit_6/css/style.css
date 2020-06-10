@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 body {background-color: #000;
 }
-
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
 h1, ul, h2, h3, a{
 	color: #fff;
 	font-family: "Oswald", sans-serif;
@@ -11,39 +15,93 @@ h1, ul, h2, h3, a{
 h1, p, ul, h2{
 	text-align: center;
 }
+h1{
+	font-size: 2em;
+}
 img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
+.scroll{
+	position: relative;
+}
 
 .scroll div{
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	bottom: 3%;
+	right: 0%;
 	background: #000000a3;
 	padding: 1em;
 	transform: translate(-50%, -50%);
 }
-nav h2: nth-of-type(1){
-	top:50%;
-	left: 1em;
+.banner div{
+	position: absolute;
+	bottom: 5%;
+	right: 0%;
+	background: #000000a3;
+	padding: 1em;
+	transform: translate(-50%, -50%);
 }
-nav h2: nth-of-type(2){
-	top:25%;
-	left: 1em;
+nav h2{
+	position:absolute;
+	margin:0;
+	z-index: 1;
+	font-size: 1.2em;
 }
-nav h2: nth-of-type(3){
-	top: 3em;
-	left: 50%;
+
+nav h2:nth-of-type(1){
+	top:1%;
+	left: 5%;
 }
-nav h2: nth-of-type(4){
-	top: 50%;
-	right: 1em;
+nav h2:nth-of-type(2){
+	top:1%;
+	left: 20%;
+}
+nav h2:nth-of-type(3){
+	top:1%;
+	right: 20%;
+}
+nav h2:nth-of-type(4){
+	top: 5%;
+	right:50%;
+}
+
+nav h2:nth-of-type(5){
+	top: 1%;
+	right: 5%;
 }
 
 h3{
 text-align: right; 
-margin-right: 30px;
+margin-right: 3em;
 }
+@media only screen and (max-width: 470px) {
+	nav h2{
+	position:absolute;
+	margin:0;
+	z-index: 1;
+	font-size: 1em;
+	left: 5%
+	}
+	nav h2:nth-of-type(1){
+	top:5%;
+	left: 5%;
+	}
+	nav h2:nth-of-type(2){
+	top:25%;
+	}
+	nav h2:nth-of-type(3){
+	top:45%;
+	}
+	nav h2:nth-of-type(4){
+	top: 85%;
+	}
+	nav h2:nth-of-type(5){
+	top: 65%;
+	}
+}
+
+
+
